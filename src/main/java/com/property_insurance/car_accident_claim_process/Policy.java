@@ -6,12 +6,146 @@ package com.property_insurance.car_accident_claim_process;
 
 public class Policy implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Policy() {
-    }
+	private java.math.BigInteger id;
+	private java.math.BigInteger memberId;
+	private java.lang.Integer timeLimit;
+	private java.lang.Double deductible;
+	private java.lang.Double transportationExpenseCoverage;
+	private java.lang.Double oemPartsCoverage;
+	private java.lang.Double carLiabilityCoverage;
+	private java.lang.Double uninsuradeAndUnderinsuredMototistCoverage;
+	private java.lang.Double comprehensiveCoverage;
+	private java.lang.Double collisionCoverage;
+	private java.lang.Double medicalPaymentsCoverage;
+	private java.lang.Double personalInjuryProtection;
 
+	public Policy() {
+	}
 
+	public java.math.BigInteger getId() {
+		return this.id;
+	}
 
+	public void setId(java.math.BigInteger id) {
+		this.id = id;
+	}
+
+	public java.math.BigInteger getMemberId() {
+		return this.memberId;
+	}
+
+	public void setMemberId(java.math.BigInteger memberId) {
+		this.memberId = memberId;
+	}
+
+	public java.lang.Integer getTimeLimit() {
+		return this.timeLimit;
+	}
+
+	public void setTimeLimit(java.lang.Integer timeLimit) {
+		this.timeLimit = timeLimit;
+	}
+
+	public java.lang.Double getDeductible() {
+		return this.deductible;
+	}
+
+	public void setDeductible(java.lang.Double deductible) {
+		this.deductible = deductible;
+	}
+
+	public java.lang.Double getTransportationExpenseCoverage() {
+		return this.transportationExpenseCoverage;
+	}
+
+	public void setTransportationExpenseCoverage(
+			java.lang.Double transportationExpenseCoverage) {
+		this.transportationExpenseCoverage = transportationExpenseCoverage;
+	}
+
+	public java.lang.Double getOemPartsCoverage() {
+		return this.oemPartsCoverage;
+	}
+
+	public void setOemPartsCoverage(java.lang.Double oemPartsCoverage) {
+		this.oemPartsCoverage = oemPartsCoverage;
+	}
+
+	public java.lang.Double getCarLiabilityCoverage() {
+		return this.carLiabilityCoverage;
+	}
+
+	public void setCarLiabilityCoverage(java.lang.Double carLiabilityCoverage) {
+		this.carLiabilityCoverage = carLiabilityCoverage;
+	}
+
+	public java.lang.Double getUninsuradeAndUnderinsuredMototistCoverage() {
+		return this.uninsuradeAndUnderinsuredMototistCoverage;
+	}
+
+	public void setUninsuradeAndUnderinsuredMototistCoverage(
+			java.lang.Double uninsuradeAndUnderinsuredMototistCoverage) {
+		this.uninsuradeAndUnderinsuredMototistCoverage = uninsuradeAndUnderinsuredMototistCoverage;
+	}
+
+	public java.lang.Double getComprehensiveCoverage() {
+		return this.comprehensiveCoverage;
+	}
+
+	public void setComprehensiveCoverage(java.lang.Double comprehensiveCoverage) {
+		this.comprehensiveCoverage = comprehensiveCoverage;
+	}
+
+	public java.lang.Double getCollisionCoverage() {
+		return this.collisionCoverage;
+	}
+
+	public void setCollisionCoverage(java.lang.Double collisionCoverage) {
+		this.collisionCoverage = collisionCoverage;
+	}
+
+	public java.lang.Double getMedicalPaymentsCoverage() {
+		return this.medicalPaymentsCoverage;
+	}
+
+	public void setMedicalPaymentsCoverage(
+			java.lang.Double medicalPaymentsCoverage) {
+		this.medicalPaymentsCoverage = medicalPaymentsCoverage;
+	}
+
+	public java.lang.Double getPersonalInjuryProtection() {
+		return this.personalInjuryProtection;
+	}
+
+	public void setPersonalInjuryProtection(
+			java.lang.Double personalInjuryProtection) {
+		this.personalInjuryProtection = personalInjuryProtection;
+	}
+
+	public Policy(java.math.BigInteger id, java.math.BigInteger memberId,
+			java.lang.Integer timeLimit, java.lang.Double deductible,
+			java.lang.Double transportationExpenseCoverage,
+			java.lang.Double oemPartsCoverage,
+			java.lang.Double carLiabilityCoverage,
+			java.lang.Double uninsuradeAndUnderinsuredMototistCoverage,
+			java.lang.Double comprehensiveCoverage,
+			java.lang.Double collisionCoverage,
+			java.lang.Double medicalPaymentsCoverage,
+			java.lang.Double personalInjuryProtection) {
+		this.id = id;
+		this.memberId = memberId;
+		this.timeLimit = timeLimit;
+		this.deductible = deductible;
+		this.transportationExpenseCoverage = transportationExpenseCoverage;
+		this.oemPartsCoverage = oemPartsCoverage;
+		this.carLiabilityCoverage = carLiabilityCoverage;
+		this.uninsuradeAndUnderinsuredMototistCoverage = uninsuradeAndUnderinsuredMototistCoverage;
+		this.comprehensiveCoverage = comprehensiveCoverage;
+		this.collisionCoverage = collisionCoverage;
+		this.medicalPaymentsCoverage = medicalPaymentsCoverage;
+		this.personalInjuryProtection = personalInjuryProtection;
+	}
 
 }
