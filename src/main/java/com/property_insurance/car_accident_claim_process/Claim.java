@@ -6,12 +6,33 @@ package com.property_insurance.car_accident_claim_process;
 
 public class Claim implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Claim() {
-    }
+	private java.math.BigInteger id;
+	private java.math.BigInteger memberId;
 
+	public Claim() {
+	}
 
+	public java.math.BigInteger getId() {
+		return this.id;
+	}
 
+	public void setId(java.math.BigInteger id) {
+		this.id = id;
+	}
+
+	public java.math.BigInteger getMemberId() {
+		return this.memberId;
+	}
+
+	public void setMemberId(java.math.BigInteger memberId) {
+		this.memberId = memberId;
+	}
+
+	public Claim(java.math.BigInteger id, java.math.BigInteger memberId) {
+		this.id = id;
+		this.memberId = memberId;
+	}
 
 }
