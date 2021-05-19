@@ -9,7 +9,7 @@ public class Policy implements java.io.Serializable {
 	static final long serialVersionUID = 1L;
 
 	private java.math.BigInteger id;
-	private java.math.BigInteger memberId;
+	private String memberId;
 	private java.lang.Integer timeLimit;
 	private java.lang.Double deductible;
 	private java.lang.Double transportationExpenseCoverage;
@@ -30,14 +30,6 @@ public class Policy implements java.io.Serializable {
 
 	public void setId(java.math.BigInteger id) {
 		this.id = id;
-	}
-
-	public java.math.BigInteger getMemberId() {
-		return this.memberId;
-	}
-
-	public void setMemberId(java.math.BigInteger memberId) {
-		this.memberId = memberId;
 	}
 
 	public java.lang.Integer getTimeLimit() {
@@ -124,7 +116,15 @@ public class Policy implements java.io.Serializable {
 		this.personalInjuryProtection = personalInjuryProtection;
 	}
 
-	public Policy(java.math.BigInteger id, java.math.BigInteger memberId,
+	public java.lang.String getMemberId() {
+		return this.memberId;
+	}
+
+	public void setMemberId(java.lang.String memberId) {
+		this.memberId = memberId;
+	}
+
+	public Policy(java.math.BigInteger id, java.lang.String memberId,
 			java.lang.Integer timeLimit, java.lang.Double deductible,
 			java.lang.Double transportationExpenseCoverage,
 			java.lang.Double oemPartsCoverage,
