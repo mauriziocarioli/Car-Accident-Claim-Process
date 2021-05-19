@@ -6,12 +6,65 @@ package com.property_insurance.car_accident_claim_process;
 
 public class PersonInvolved implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public PersonInvolved() {
-    }
+	private java.lang.String name;
+	private java.lang.String address;
+	private java.lang.String insurance;
+	private java.lang.String insuranceId;
+	private java.lang.String vehicleInformation;
 
+	public PersonInvolved() {
+	}
 
+	public java.lang.String getName() {
+		return this.name;
+	}
 
+	public void setName(java.lang.String name) {
+		this.name = name;
+	}
+
+	public java.lang.String getAddress() {
+		return this.address;
+	}
+
+	public void setAddress(java.lang.String address) {
+		this.address = address;
+	}
+
+	public java.lang.String getInsurance() {
+		return this.insurance;
+	}
+
+	public void setInsurance(java.lang.String insurance) {
+		this.insurance = insurance;
+	}
+
+	public java.lang.String getInsuranceId() {
+		return this.insuranceId;
+	}
+
+	public void setInsuranceId(java.lang.String insuranceId) {
+		this.insuranceId = insuranceId;
+	}
+
+	public java.lang.String getVehicleInformation() {
+		return this.vehicleInformation;
+	}
+
+	public void setVehicleInformation(java.lang.String vehicleInformation) {
+		this.vehicleInformation = vehicleInformation;
+	}
+
+	public PersonInvolved(java.lang.String name, java.lang.String address,
+			java.lang.String insurance, java.lang.String insuranceId,
+			java.lang.String vehicleInformation) {
+		this.name = name;
+		this.address = address;
+		this.insurance = insurance;
+		this.insuranceId = insuranceId;
+		this.vehicleInformation = vehicleInformation;
+	}
 
 }
