@@ -11,6 +11,20 @@ public class Claim implements java.io.Serializable {
 	private java.math.BigInteger id;
 	private java.math.BigInteger memberId;
 
+	private java.lang.String location;
+
+	private java.time.LocalTime timeOfDay;
+
+	private java.lang.String weatherConditions;
+
+	private java.util.List<java.lang.Byte> photos;
+
+	private java.util.List<java.lang.String> personInvolved;
+
+	private java.util.List<java.lang.String> policeOfficer;
+
+	private java.lang.Byte accidentReport;
+
 	public Claim() {
 	}
 
@@ -30,9 +44,79 @@ public class Claim implements java.io.Serializable {
 		this.memberId = memberId;
 	}
 
-	public Claim(java.math.BigInteger id, java.math.BigInteger memberId) {
+	public java.lang.String getLocation() {
+		return this.location;
+	}
+
+	public void setLocation(java.lang.String location) {
+		this.location = location;
+	}
+
+	public java.time.LocalTime getTimeOfDay() {
+		return this.timeOfDay;
+	}
+
+	public void setTimeOfDay(java.time.LocalTime timeOfDay) {
+		this.timeOfDay = timeOfDay;
+	}
+
+	public java.lang.String getWeatherConditions() {
+		return this.weatherConditions;
+	}
+
+	public void setWeatherConditions(java.lang.String weatherConditions) {
+		this.weatherConditions = weatherConditions;
+	}
+
+	public java.util.List<java.lang.Byte> getPhotos() {
+		return this.photos;
+	}
+
+	public void setPhotos(java.util.List<java.lang.Byte> photos) {
+		this.photos = photos;
+	}
+
+	public java.util.List<java.lang.String> getPersonInvolved() {
+		return this.personInvolved;
+	}
+
+	public void setPersonInvolved(
+			java.util.List<java.lang.String> personInvolved) {
+		this.personInvolved = personInvolved;
+	}
+
+	public java.util.List<java.lang.String> getPoliceOfficer() {
+		return this.policeOfficer;
+	}
+
+	public void setPoliceOfficer(java.util.List<java.lang.String> policeOfficer) {
+		this.policeOfficer = policeOfficer;
+	}
+
+	public java.lang.Byte getAccidentReport() {
+		return this.accidentReport;
+	}
+
+	public void setAccidentReport(java.lang.Byte accidentReport) {
+		this.accidentReport = accidentReport;
+	}
+
+	public Claim(java.math.BigInteger id, java.math.BigInteger memberId,
+			java.lang.String location, java.time.LocalTime timeOfDay,
+			java.lang.String weatherConditions,
+			java.util.List<java.lang.Byte> photos,
+			java.util.List<java.lang.String> personInvolved,
+			java.util.List<java.lang.String> policeOfficer,
+			java.lang.Byte accidentReport) {
 		this.id = id;
 		this.memberId = memberId;
+		this.location = location;
+		this.timeOfDay = timeOfDay;
+		this.weatherConditions = weatherConditions;
+		this.photos = photos;
+		this.personInvolved = personInvolved;
+		this.policeOfficer = policeOfficer;
+		this.accidentReport = accidentReport;
 	}
 
 }
