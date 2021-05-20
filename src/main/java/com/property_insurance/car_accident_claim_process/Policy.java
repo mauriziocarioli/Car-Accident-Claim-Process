@@ -11,7 +11,6 @@ public class Policy implements java.io.Serializable {
 
 	private java.math.BigInteger id;
 	private String memberId;
-	private long timeLimit;
 	private java.lang.Double deductible;
 	private java.lang.Double transportationExpenseCoverage;
 	private java.lang.Double oemPartsCoverage;
@@ -21,6 +20,8 @@ public class Policy implements java.io.Serializable {
 	private java.lang.Double collisionCoverage;
 	private java.lang.Double medicalPaymentsCoverage;
 	private java.lang.Double personalInjuryProtection;
+
+	private long timeLimitDays;
 
 	public Policy() {
 	}
@@ -117,16 +118,16 @@ public class Policy implements java.io.Serializable {
 		this.memberId = memberId;
 	}
 
-	public long getTimeLimit() {
-		return this.timeLimit;
+	public long getTimeLimitDays() {
+		return this.timeLimitDays;
 	}
 
-	public void setTimeLimit(long timeLimit) {
-		this.timeLimit = timeLimit;
+	public void setTimeLimitDays(long timeLimitDays) {
+		this.timeLimitDays = timeLimitDays;
 	}
 
 	public Policy(java.math.BigInteger id, java.lang.String memberId,
-			long timeLimit, java.lang.Double deductible,
+			java.lang.Double deductible,
 			java.lang.Double transportationExpenseCoverage,
 			java.lang.Double oemPartsCoverage,
 			java.lang.Double carLiabilityCoverage,
@@ -134,10 +135,9 @@ public class Policy implements java.io.Serializable {
 			java.lang.Double comprehensiveCoverage,
 			java.lang.Double collisionCoverage,
 			java.lang.Double medicalPaymentsCoverage,
-			java.lang.Double personalInjuryProtection) {
+			java.lang.Double personalInjuryProtection, long timeLimitDays) {
 		this.id = id;
 		this.memberId = memberId;
-		this.timeLimit = timeLimit;
 		this.deductible = deductible;
 		this.transportationExpenseCoverage = transportationExpenseCoverage;
 		this.oemPartsCoverage = oemPartsCoverage;
@@ -147,6 +147,7 @@ public class Policy implements java.io.Serializable {
 		this.collisionCoverage = collisionCoverage;
 		this.medicalPaymentsCoverage = medicalPaymentsCoverage;
 		this.personalInjuryProtection = personalInjuryProtection;
+		this.timeLimitDays = timeLimitDays;
 	}
 
 }
