@@ -18,11 +18,13 @@ public class Claim implements java.io.Serializable {
 
 	private java.lang.String weatherConditions;
 
-	private java.lang.Byte accidentReport;
-
 	private java.util.List<com.property_insurance.car_accident_claim_process.PersonInvolved> personInvolved;
 
 	private java.util.List<com.property_insurance.car_accident_claim_process.PoliceOfficer> policeOfficer;
+
+	private java.time.OffsetDateTime filingDate;
+
+	private java.time.OffsetDateTime accidentDate;
 
 	public Claim() {
 	}
@@ -67,14 +69,6 @@ public class Claim implements java.io.Serializable {
 		this.weatherConditions = weatherConditions;
 	}
 
-	public java.lang.Byte getAccidentReport() {
-		return this.accidentReport;
-	}
-
-	public void setAccidentReport(java.lang.Byte accidentReport) {
-		this.accidentReport = accidentReport;
-	}
-
 	public java.util.List<com.property_insurance.car_accident_claim_process.PersonInvolved> getPersonInvolved() {
 		return this.personInvolved;
 	}
@@ -93,23 +87,41 @@ public class Claim implements java.io.Serializable {
 		this.policeOfficer = policeOfficer;
 	}
 
+	public java.time.OffsetDateTime getFilingDate() {
+		return this.filingDate;
+	}
+
+	public void setFilingDate(java.time.OffsetDateTime filingDate) {
+		this.filingDate = filingDate;
+	}
+
+	public java.time.OffsetDateTime getAccidentDate() {
+		return this.accidentDate;
+	}
+
+	public void setAccidentDate(java.time.OffsetDateTime accidentDate) {
+		this.accidentDate = accidentDate;
+	}
+
 	public Claim(
 			java.math.BigInteger id,
 			java.math.BigInteger memberId,
 			java.lang.String location,
 			java.time.LocalTime timeOfDay,
 			java.lang.String weatherConditions,
-			java.lang.Byte accidentReport,
 			java.util.List<com.property_insurance.car_accident_claim_process.PersonInvolved> personInvolved,
-			java.util.List<com.property_insurance.car_accident_claim_process.PoliceOfficer> policeOfficer) {
+			java.util.List<com.property_insurance.car_accident_claim_process.PoliceOfficer> policeOfficer,
+			java.time.OffsetDateTime filingDate,
+			java.time.OffsetDateTime accidentDate) {
 		this.id = id;
 		this.memberId = memberId;
 		this.location = location;
 		this.timeOfDay = timeOfDay;
 		this.weatherConditions = weatherConditions;
-		this.accidentReport = accidentReport;
 		this.personInvolved = personInvolved;
 		this.policeOfficer = policeOfficer;
+		this.filingDate = filingDate;
+		this.accidentDate = accidentDate;
 	}
 
 }
