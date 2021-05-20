@@ -15,13 +15,14 @@ public class Policy implements java.io.Serializable {
 	private java.lang.Double transportationExpenseCoverage;
 	private java.lang.Double oemPartsCoverage;
 	private java.lang.Double carLiabilityCoverage;
-	private java.lang.Double uninsuradeAndUnderinsuredMototistCoverage;
 	private java.lang.Double comprehensiveCoverage;
 	private java.lang.Double collisionCoverage;
 	private java.lang.Double medicalPaymentsCoverage;
 	private java.lang.Double personalInjuryProtection;
 
 	private long timeLimitDays;
+
+	private java.lang.Double uninsuradeAndUnderinsuredMotoristCoverage;
 
 	public Policy() {
 	}
@@ -65,15 +66,6 @@ public class Policy implements java.io.Serializable {
 
 	public void setCarLiabilityCoverage(java.lang.Double carLiabilityCoverage) {
 		this.carLiabilityCoverage = carLiabilityCoverage;
-	}
-
-	public java.lang.Double getUninsuradeAndUnderinsuredMototistCoverage() {
-		return this.uninsuradeAndUnderinsuredMototistCoverage;
-	}
-
-	public void setUninsuradeAndUnderinsuredMototistCoverage(
-			java.lang.Double uninsuradeAndUnderinsuredMototistCoverage) {
-		this.uninsuradeAndUnderinsuredMototistCoverage = uninsuradeAndUnderinsuredMototistCoverage;
 	}
 
 	public java.lang.Double getComprehensiveCoverage() {
@@ -126,28 +118,37 @@ public class Policy implements java.io.Serializable {
 		this.timeLimitDays = timeLimitDays;
 	}
 
+	public java.lang.Double getUninsuradeAndUnderinsuredMotoristCoverage() {
+		return this.uninsuradeAndUnderinsuredMotoristCoverage;
+	}
+
+	public void setUninsuradeAndUnderinsuredMotoristCoverage(
+			java.lang.Double uninsuradeAndUnderinsuredMotoristCoverage) {
+		this.uninsuradeAndUnderinsuredMotoristCoverage = uninsuradeAndUnderinsuredMotoristCoverage;
+	}
+
 	public Policy(java.math.BigInteger id, java.lang.String memberId,
 			java.lang.Double deductible,
 			java.lang.Double transportationExpenseCoverage,
 			java.lang.Double oemPartsCoverage,
 			java.lang.Double carLiabilityCoverage,
-			java.lang.Double uninsuradeAndUnderinsuredMototistCoverage,
 			java.lang.Double comprehensiveCoverage,
 			java.lang.Double collisionCoverage,
 			java.lang.Double medicalPaymentsCoverage,
-			java.lang.Double personalInjuryProtection, long timeLimitDays) {
+			java.lang.Double personalInjuryProtection, long timeLimitDays,
+			java.lang.Double uninsuradeAndUnderinsuredMotoristCoverage) {
 		this.id = id;
 		this.memberId = memberId;
 		this.deductible = deductible;
 		this.transportationExpenseCoverage = transportationExpenseCoverage;
 		this.oemPartsCoverage = oemPartsCoverage;
 		this.carLiabilityCoverage = carLiabilityCoverage;
-		this.uninsuradeAndUnderinsuredMototistCoverage = uninsuradeAndUnderinsuredMototistCoverage;
 		this.comprehensiveCoverage = comprehensiveCoverage;
 		this.collisionCoverage = collisionCoverage;
 		this.medicalPaymentsCoverage = medicalPaymentsCoverage;
 		this.personalInjuryProtection = personalInjuryProtection;
 		this.timeLimitDays = timeLimitDays;
+		this.uninsuradeAndUnderinsuredMotoristCoverage = uninsuradeAndUnderinsuredMotoristCoverage;
 	}
 
 }
