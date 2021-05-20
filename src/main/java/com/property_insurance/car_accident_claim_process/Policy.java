@@ -11,7 +11,7 @@ public class Policy implements java.io.Serializable {
 
 	private java.math.BigInteger id;
 	private String memberId;
-	private java.lang.Integer timeLimit;
+	private long timeLimit;
 	private java.lang.Double deductible;
 	private java.lang.Double transportationExpenseCoverage;
 	private java.lang.Double oemPartsCoverage;
@@ -31,14 +31,6 @@ public class Policy implements java.io.Serializable {
 
 	public void setId(java.math.BigInteger id) {
 		this.id = id;
-	}
-
-	public java.lang.Integer getTimeLimit() {
-		return this.timeLimit;
-	}
-
-	public void setTimeLimit(java.lang.Integer timeLimit) {
-		this.timeLimit = timeLimit;
 	}
 
 	public java.lang.Double getDeductible() {
@@ -125,8 +117,16 @@ public class Policy implements java.io.Serializable {
 		this.memberId = memberId;
 	}
 
+	public long getTimeLimit() {
+		return this.timeLimit;
+	}
+
+	public void setTimeLimit(long timeLimit) {
+		this.timeLimit = timeLimit;
+	}
+
 	public Policy(java.math.BigInteger id, java.lang.String memberId,
-			java.lang.Integer timeLimit, java.lang.Double deductible,
+			long timeLimit, java.lang.Double deductible,
 			java.lang.Double transportationExpenseCoverage,
 			java.lang.Double oemPartsCoverage,
 			java.lang.Double carLiabilityCoverage,
